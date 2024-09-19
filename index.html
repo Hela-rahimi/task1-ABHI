@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University and Department Selection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Select University, Department, and Specialization</h1>
+    <form id="selectionForm">
+        <label for="university">University:</label>
+        <select id="university" name="university">
+            <option value="kabulUniversity">Kabul University</option>
+            <option value="kabulPolytechnicUniversity">Kabul Polytechnic University</option>
+            <option value="kabulMedicalUniversity">Kabul Medical University</option>
+        </select>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department">
+            <!-- Departments will be populated based on university selection -->
+        </select>
+
+        <label for="specialization">Specialization:</label>
+        <select id="specialization" name="specialization">
+            <!-- Specializations will be populated based on department selection -->
+        </select>
+    </form>
+
+    <table id="studentsInfo">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Student information will be populated here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
